@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 
-	<title>Trivia Game</title>
+	<title>Graphic Design Trivia Game</title>
 
 	<!-- jQuery -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
@@ -24,18 +24,35 @@
 	<!-- External CSS -->
 	<link rel="stylesheet" href="assets/css/style.css">
 
+	<!-- Font -->
+	<link href="https://fonts.googleapis.com/css?family=Asap" rel="stylesheet">
+
 </head>
 <body>
-	<div class="timer"></div>	
-	
-	<div class="triviaBox"></div>
-	
-	<div class="image"></div>
+	<div class="wrapper">
+		<button class="startBtn">Graphic Design Trivia</button>
 
-	<button class="btn btn-default startBtn">Play Trivia</button>
+		<button class="resetBtn">Play Again</button>
 
-	<button class="btn btn-default resetBtn hidden">Play Again</button>
+		<div class="timer"></div>
 
+		<div class="question-image"></div>
+
+		<div class="answer-image"></div>
+
+		<div class="container main-content">
+
+			<div class="correct-answer"></div>
+					
+			<div class="question"></div>
+			
+			<div class="triviaBox">
+
+			</div>
+
+		</div>
+
+	</div>
 	<script src="assets/javascript/app.js"></script>
 </body>
 </html>

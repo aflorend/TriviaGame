@@ -1,3 +1,156 @@
-.hidden {
-	display: none;
+html,
+body {
+	font-family: 'Asap', sans-serif;
+}
+
+.container {
+	max-width: 70vw;
+}
+
+.wrapper {
+	height: 100vh;
+	width: 100vw;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.buttons {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+button {
+	
+	font-size: 2vmin;
+	font-weight: bold;
+
+	position: fixed;
+	top: 30vh;
+	
+	padding: 2vmin;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	border: none;
+	transition: all 1s ease-in-out;
+}
+
+button:hover {
+	background-color: red;
+}
+
+/*Main content for questions and answers*/
+.main-content {
+	height: 50%;
+	width: 100%
+}
+
+.question {
+	height: 50%;
+	width: 100%;
+
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+	text-align: center;
+
+	font-size: 2vmin;
+	font-weight: bold;
+}
+
+.triviaBox {
+	height: 50%;
+	width: 100%;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: flex-start;
+
+	font-size: 2vmin;
+	font-weight: bold;
+	text-align: center;
+}
+
+.answers {
+	padding: 2vmin;
+	margin: 2vmin;
+
+	font-weight: normal;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	border-top: 2px solid black;
+	transition: all 1s ease-in-out;
+}
+
+.answers:hover {
+	background-color: black;
+	color: white;
+}
+
+.correct-answer {
+	position: fixed;
+	right: 0;
+	bottom: 0;
+
+	font-size: 10vmin;
+	font-weight: bold;
+
+	padding: 5vmin;
+
+	mix-blend-mode: multiply;
+	color: red;
+}
+
+/*Timer*/
+.timer {
+	position: fixed;
+	left: -5vw;
+	top: -30vh;
+	z-index: -50;
+
+	font-size: 80vh;
+	font-weight: bold;
+	mix-blend-mode: multiply;
+	color: red;
+}
+
+/*Images*/
+.question-image {
+	height: 40vh;
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: -100;
+}
+
+.answer-image {
+	height: 60vh;
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	z-index: -100;
+}
+
+.question-image img {
+	height: 100%;
+	width: auto;
+	filter: grayscale(100%);
+	opacity: 0.5;
+}
+
+.answer-image img {
+	height: 100%;
+	width: auto;
+	filter: grayscale(100%);
+	opacity: 0.5;
+	border-radius: 100%;
 }
