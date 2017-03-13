@@ -71,6 +71,7 @@ button:hover {
 	flex-direction: row;
 	justify-content: center;
 	align-items: flex-start;
+	flex-wrap: wrap;
 
 	font-size: 2vmin;
 	font-weight: bold;
@@ -88,7 +89,7 @@ button:hover {
 	justify-content: center;
 
 	border-top: 2px solid black;
-	transition: all 1s ease-in-out;
+	transition: background-color 1s ease-in-out;
 }
 
 .answers:hover {
@@ -113,11 +114,11 @@ button:hover {
 /*Timer*/
 .timer {
 	position: fixed;
-	left: -5vw;
-	top: -30vh;
+	left: -5px;
+	top: -100px;
 	z-index: -50;
 
-	font-size: 80vh;
+	font-size: 50vmin;
 	font-weight: bold;
 	mix-blend-mode: multiply;
 	color: red;
